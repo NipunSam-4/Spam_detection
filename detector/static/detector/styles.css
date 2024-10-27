@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to right, #6AD4DD, #7AA2E3); /* Gradient background */
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+h1 {
+    color: #000000; /* Changed color for "Spam Detection" */
+    margin-bottom: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    width: 100%; /* Allow the card to fill its parent */
+    max-width: 600px; /* Maximum width of the card */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 150px; /* Fixed height for the textarea */
+    resize: none; /* Prevent resizing */
+    text-align: left; /* Align text to the left */
+    border-radius: 5px; /* Rounded corners for better look */
+    padding: 10px; /* Padding for better usability */
+    width: 100%; /* Full width */
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+textarea::placeholder {
+    color: #a0a0a0; /* Placeholder text color */
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.btn-primary:hover {
+    background-color: #005ab9; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.text-muted {
+    font-size: 14px;
+    text-align: right; /* Align character count to the right */
+}
+
+span.spam {
+    color: rgb(255, 90, 45); /* Color for spam prediction */
+}
+
+span.not-spam {
+    color: green; /* Color for not spam prediction */
+}
