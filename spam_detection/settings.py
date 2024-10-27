@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-u%l*5_*9%8^u)=jv%)8@4#k6rg6p@gne^^rd%wk%l#8&4q*u1m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['your-heroku-app-name.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'nipspam-detection-1.onrender.com',
+    'localhost',  # you can add this if you run it locally
+    '127.0.0.1',  # and this if you want to allow requests from localhost
+]
 
 
 # Application definition
